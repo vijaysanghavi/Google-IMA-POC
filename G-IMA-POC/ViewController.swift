@@ -35,8 +35,14 @@ class ViewController: UIViewController {
         ])
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
     @objc func hitme() {
-        self.gIMAService.play()
+        self.gIMAService.play {
+            self.gIMAService.requestAds()            
+        }
     }
 
 }
