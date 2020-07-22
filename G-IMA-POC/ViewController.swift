@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import GoogleInteractiveMediaAds
 
 class ViewController: UIViewController {
 
@@ -27,7 +26,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
         self.button.addTarget(self, action: #selector(ViewController.hitme), for: .touchUpInside)
         self.view.addSubview(button)
         self.button.translatesAutoresizingMaskIntoConstraints = false
